@@ -80,16 +80,17 @@ List head = [
     ),
   ),
 
-  Text('dipakgaikwad_04', style: TextStyle(color: Colors.white)),
+  Text('dipakgaikwad_04 ﹀', style: TextStyle(color: Colors.white)),
 
   Text('reels', style: TextStyle(color: Colors.white)),
 
   Text('Profile', style: TextStyle(color: Colors.white)),
 ];
-List center = [true, false, false, false, false];
+List center = [false, false, true, false, false];
+
 List appbaricons = [
   Icon(Icons.favorite_border, color: Colors.white),
-  Icon(Icons.search),
+  null,
   Icon(Icons.message),
   Icon(Icons.video_collection_outlined),
   Icon(Icons.person_outline),
@@ -114,11 +115,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         backgroundColor: Colors.black,
         centerTitle: center[appind],
         title: head[appind],
-        actions:[appbaricons[appind]],
+        actions: appbaricons[appind] == null ? [] : [appbaricons[appind]],
       ),
 
       body: Screens[selectindex],
