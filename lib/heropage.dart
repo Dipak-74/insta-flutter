@@ -1,4 +1,150 @@
-   SingleChildScrollView(
+import 'package:flutter/material.dart';
+import 'package:column/message.dart';
+import 'package:column/userDetails.dart';
+
+
+List story = [
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrG0mIbSf4c1KB_31wA4pMWkDRG8FzrNFhQ&s",
+    "username": "rushi_9i",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb-8dZy4ihdefD2luVWeVMhAqpX7C4FJxAnQ&s",
+    "username": "nick_chavan",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVtoGao8kkgwcLYuXR-zmUcQe-XmffH82-6A&s",
+    "username": "prajwal_6990",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDEGY70sXu6hffkyiumm77Ke6nJ8fSY0j6hoVyxTNJL5zrmHOh85NPza5-_4toryCwgs&usqp=CAU",
+    "username": "omkyaa_302",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fkQ5pVKNJf8lYhCxsuLk_ejjJlV7KqqDcxkLcVkrwY25rGDEPfpGFduSUxntmxIfRFg&usqp=CAU",
+    "username": "_killer_",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7zZ0byqzdNcjx3NNvAPLMsIFB_GofuzU2Jg&s",
+    "username": "vedaa_ii",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSI0W4XZrdfGrZQlHTdUT_pMqjv0YkHpWzvgbwwfiAjqbVJzMAcPdczHtD-fhhPWCMqwc&usqp=CAU",
+    "username": "siddhu_456",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-IhKctOMA3ymLYcXwH72EeMzFMfiQuItHw&s",
+    "username": "dipak_74",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-m9X7JjxXpvYq2DbWHMWbxdt4Roa9oYPbw&s",
+    "username": "sabale__a",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7fScrHUntFo6yWsOITlV8Gnr-ayJrJBP3Q&s",
+    "username": "Karan-patil",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fkQ5pVKNJf8lYhCxsuLk_ejjJlV7KqqDcxkLcVkrwY25rGDEPfpGFduSUxntmxIfRFg&usqp=CAU",
+    "username": "_athrav_",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7zZ0byqzdNcjx3NNvAPLMsIFB_GofuzU2Jg&s",
+    "username": "-heart_",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSI0W4XZrdfGrZQlHTdUT_pMqjv0YkHpWzvgbwwfiAjqbVJzMAcPdczHtD-fhhPWCMqwc&usqp=CAU",
+    "username": "_kabaddi_",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-IhKctOMA3ymLYcXwH72EeMzFMfiQuItHw&s",
+    "username": "rohan17x",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-m9X7JjxXpvYq2DbWHMWbxdt4Roa9oYPbw&s",
+    "username": "cp034211",
+  },
+  {
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7fScrHUntFo6yWsOITlV8Gnr-ayJrJBP3Q&s",
+    "username": "omiix_",
+  },
+];
+List post = [
+  {
+    "username": "_dipak_74",
+    "location": "Rajdhani Satara",
+    "userimage":
+        "http://images.unsplash.com/photo-1618477202872-89cec6f8d62e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "likes": 950,
+    "comment": 100,
+    "repeat": 50,
+    "share": 200,
+  },
+  {
+    "username": "cool-boy_34",
+    "location": "pune",
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJrjhy1yhbaSaIznjdKfRhkOFmk7-hUK9McUkrJEzLVB472UGRLLlgpw6grDGs5Zbqv4&usqp=CAU",
+    "likes": 900,
+    "comment": 90,
+    "repeat": 30,
+    "share": 100,
+  },
+  {
+    "username": "_sidd007",
+    "location": "maharastra",
+    "userimage":
+        "http://images.unsplash.com/photo-1618477202872-89cec6f8d62e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "likes": 800,
+    "comment": 300,
+    "repeat": 60,
+    "share": 320,
+  },
+  {
+    "username": "_nikhil_02",
+    "location": "koregoan",
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHoK9_t59mc3CFtSC9ciiAflycbagCd9pvw&s",
+    "likes": 500,
+    "comment": 60,
+    "repeat": 32,
+    "share": 67,
+  },
+  {
+    "username": "_Rushi_11",
+    "location": "karad",
+    "userimage":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzFgojO3-MJEI8_FG_3mTgzL7J9hvsRELxq9AwTQpTmqeLd8qPyz-7Te3CA6hAqb5PNvk&usqp=CAU",
+    "likes": 770,
+    "comment": 150,
+    "repeat": 8,
+    "share": 51,
+  },
+];
+
+
+class Heropage extends StatelessWidget {
+  const Heropage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
           child: Column(
             children: [
               Container(
@@ -25,24 +171,16 @@
                                 ),
                               ),
 
-                              child: InkWell(
-                                borderRadius: BorderRadius.circular(50),
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          MessagePage(yarrstory: yarr),
-                                    ),
-                                  );
-                                },
+                            
+                               
+                              
                                 child: CircleAvatar(
                                   radius: 50,
                                   backgroundImage: NetworkImage(
                                     story[index]["userimage"],
                                   ),
                                 ),
-                              ),
+                              
                             ),
 
                             Text(
@@ -360,5 +498,7 @@
               ),
             ],
           ),
-        ),
+        );
      
+  }
+}

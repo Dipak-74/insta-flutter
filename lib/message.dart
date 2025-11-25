@@ -45,22 +45,15 @@ List msgstory = [
   },
 ];
 
+
 class MessagePage extends StatelessWidget {
-  final Map yarrstory;
-  const MessagePage({super.key, required this.yarrstory});
+ 
+  const MessagePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        iconTheme: IconThemeData(color: Colors.white),
-
-        title: Text('dipakgaikwad_04', style: TextStyle(color: Colors.white)),
-        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
-        actions: [Icon(Icons.add_box_outlined, color: Colors.white)],
-      ),
-      body: SingleChildScrollView(
+     body: SingleChildScrollView(
         child: Container(
           color: Colors.black,
           width: double.infinity,
